@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <audio controls autoplay loop>
+        <source src="forest-ambience-3.wav" type="audio/wav" />
+      </audio>
+    </div>
+    <form>
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" minlength="2" required />
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" name="password" minlength="6" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" />
+      </div>
+      <div>
+        <label for="date">Date of Booking:</label>
+        <input type="date" name="date" />
+      </div>
+      <div>
+        <label for="number">Number of People:</label>
+        <input type="number" name="number" min="1" max="8" />
+      </div>
+      <div>
+        <input type="checkbox" name="cancellation" required />
+        <label for="cancellation">I agree to the cancellation policy</label>
+      </div>
+      <div>
+        <label for="rating">Rate the Dish: </label>
+        <input
+          type="range"
+          name="rating"
+          list="rating-options"
+          min="1"
+          max="5"
+        />
+        <datalist>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </datalist>
+      </div>
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
