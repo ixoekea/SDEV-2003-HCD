@@ -1,0 +1,49 @@
+/* Universal selector for basic setup - assumed pre-existing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles for .items class - assumed pre-existing */
+.items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Learners will add the rest of their CSS below this line */
+
+.items li {
+  /* Step 1: Set font size for all li elements within .items */
+  font-size: 18px;
+  /* Step 2: Change text color for all li elements */
+  color: #444444;
+  /* Step 3: Background color for each li element */
+  background-color: rgba(232, 252, 250);
+  /* Step 4: Padding and margin for each li element */
+  padding: 10px;
+  margin: 10px;
+  /* Step 5: Border for each li element */
+  border: 1px solid #ea1e37;
+  /* Step 6: Rounded corners for each li element */
+  border-radius: 8px;
+  /* Step 7: Set list-style-type property to None for each li element  */
+  list-style-type: none;
+}
+
+/* Step 8 & 9: Interactive rule for even li elements - background color change on hover with transition */
+.items li:nth-child(even):hover {
+  background-color: #1eead1;
+  transition: background-color ease 0.3s;
+}
+/* Apply a transition for background color change - combined with Step 8 */
+
+/* Step 10 & 11: Interactive rule for odd li elements - font size and weight change on hover */
+.items li:nth-child(odd):hover {
+  font-size: 20px;
+  font-weight: bold;
+  transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+/* Ensure smooth transition for font size and weight - combined with Step 10 */

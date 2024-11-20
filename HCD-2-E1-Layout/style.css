@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.container > * {
+  border: 2px solid black;
+}
+
+.site-header,
+.site-footer {
+  background-color: #f4f4f4;
+  padding: 10px 0;
+  /* Add properties for flexbox below this comment */
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.site-footer {
+  display: flex;
+  justify-content: center;
+}
+/* Learners will add the rest of their CSS below this line */
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+.container > .main-content,
+.sidebar {
+  padding: 10px;
+}
